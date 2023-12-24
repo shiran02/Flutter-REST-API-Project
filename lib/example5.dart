@@ -46,6 +46,8 @@ class _ExampleFiveState extends State<ExampleFive> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+
+
                               ListTile(
                                 title: Text(snapshot.data!.data![index].shop!.name.toString()),
                                 subtitle: Text(snapshot.data!.data![index].shop!.shopemail.toString()),
@@ -53,6 +55,8 @@ class _ExampleFiveState extends State<ExampleFive> {
                                   backgroundImage: NetworkImage(snapshot.data!.data![index].shop!.image.toString()),
                                 ),
                               ),
+
+
                               Container(
                                 height: MediaQuery.of(context).size.height *.3,
                                 width: MediaQuery.of(context).size.width * 1,
@@ -76,7 +80,12 @@ class _ExampleFiveState extends State<ExampleFive> {
                                   );
                                 }),
                               ),
+
+
                               Icon(snapshot.data!.data![index].inWishlist! == false ? Icons.favorite : Icons.favorite_outline)
+
+
+
                             ],
                           );
                         });
